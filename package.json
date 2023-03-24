@@ -3,8 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": " https://richie9000.github.io/",
-  "scripts": {
+    "scripts": {
     "predeploy": "npm run build",
     "start": "vite",
     "build": "vite build",
