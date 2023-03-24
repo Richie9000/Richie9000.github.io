@@ -1,0 +1,63 @@
+
+  
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  body {
+    overscroll-behavior-y: none;
+    font-family: 'Inter var', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgb(145, 143, 143);
+    background: #12071f;
+    
+  }
+  
+  a {
+    pointer-events: all;
+    color: #ddd;
+    text-decoration: none;
+  }
+  
+  svg {
+    fill: #ddd;
+  }
+  
+  h1 {
+    background: linear-gradient(30deg, #c850c0, #ffcc70);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 10px;
+  }
+
+  a:hover{
+    color: white;
+    font-size: large;
+  }
+  
+  .container {
+    position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+  }
+
+  .canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+  }

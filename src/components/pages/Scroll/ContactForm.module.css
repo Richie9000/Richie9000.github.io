@@ -1,0 +1,16 @@
+.button {
+    margin-top: 25px;
+    width: 90%;
+    margin-left: 15px;
+    height: 25px;
+  }
+
+  .container{
+    margin: 10px;
+  }
+
+  h1 {
+    background: linear-gradient(30deg, #c850c0, #ffcc70);
+    background-clip: text;
+    font-size: 10px;
+  }
