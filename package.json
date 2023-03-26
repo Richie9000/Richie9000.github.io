@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-    "scripts": {
+  "scripts": {
     "predeploy": "npm run build",
     "start": "vite",
     "build": "vite build",
@@ -20,6 +20,7 @@
     "math-random": "^2.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-responsive": "^9.0.2",
     "react-router-dom": "^6.9.0",
     "react-socks": "^2.2.0",
     "three": "^0.150.1",

@@ -96,7 +96,7 @@ import styles from "./HouseMarkup.module.css"
             }}
           >
           
-            <div style={{ alignItems:"center"}}>
+            <div style={{ alignItems:"center", zIndex:"1"}}>
               If you wanna know
               more about visit....
               <a
