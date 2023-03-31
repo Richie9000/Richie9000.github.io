@@ -30,11 +30,20 @@
   }
   
   h1 {
-    background: linear-gradient(30deg, #c850c0, #ffcc70);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: #fff; /* fallback */
+    color: #eccece;
+    position: relative;
   }
+  
+  h1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
   
   a:hover{
     color: white;
