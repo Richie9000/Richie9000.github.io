@@ -1,71 +1,85 @@
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
-  
-  html,
-  body,
-  #root {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  body {
-    overscroll-behavior-y: none;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    text-rendering: optimizeLegibility;
-    color: rgb(145, 143, 143);
-    background: #12071f;
-    
-  }
-  
-  a {
-    pointer-events: all;
-    color: #ddd;
-    text-decoration: none;
-  }
-  
-  svg {
-    fill: #ddd;
-  }
-  
+body {
+  overscroll-behavior-y: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  text-rendering: optimizeLegibility;
+  background: #12071f;
+}
+
+a {
+  pointer-events: all;
+  color: #ddd;
+  text-decoration: none;
+}
+
+svg {
+  fill: #ddd;
+}
+
+h1 {
+  color: #eccece;
+  position: relative;
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+a:hover {
+  color: white;
+  font-size: large;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 767px) {
   h1 {
-    color: #eccece;
-    position: relative;
-  }
-  
-  h1::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-  
-  
-  a:hover{
-    color: white;
-    font-size: large;
-  }
-  
-  .container {
-    position: absolute;
-      top: 0;
-      left: 0;
-      pointer-events: none;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
+    font-size: 2.2em;
   }
 
-  .canvas {
-      position: absolute;
-      top: 0;
-      left: 0;
-      pointer-events: none;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
+  h1 + h1 {
+    font-size: 1.1em;
   }
+}
+
+h1 {
+  -webkit-text-fill-color: #eccece;
+}
+
+a {
+  -webkit-text-fill-color: #ddd;
+}
+
+svg {
+  -webkit-text-fill-color: #ddd;
+}
