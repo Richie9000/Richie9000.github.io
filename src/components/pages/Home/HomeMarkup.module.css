@@ -14,7 +14,6 @@
     overscroll-behavior-y: none;
     font-family: 'Arial', sans-serif;
     text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
     color: rgb(145, 143, 143);
     background: #12071f;
     
@@ -32,7 +31,6 @@
   
   h1 {
     background: linear-gradient(30deg, #c850c0, #ffcc70);
-    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 10px;
   }
