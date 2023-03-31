@@ -101,10 +101,10 @@ export const ScrollWindow = () => (
     <ScrollControls damping={6} pages={5}>
       <Items />
       <Scroll html style={{ width: '100%',  height: '100vh', zIndex: '0' }}>
-        <h2 style={{ position: 'absolute', top: `20vh`, right: '16vw', fontSize: '2em',  zIndex: '5', background: "linear-gradient(30deg, #c850c0, #ffcc70)", WebkitTextFillColor: "transparent", backgroundClip: "text"}}>Would you like </h2>
-        <h2 style={{ position: 'absolute', top: '180vh', left: '10vw', fontSize: '2em',  zIndex: '1', background: "linear-gradient(30deg, #c850c0, #ffcc70)", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>a web page</h2>
-        <h2 style={{ position: 'absolute', top: '260vh', right: '10vw',fontSize: '2em',   zIndex: '1', background: "linear-gradient(30deg, #c850c0, #ffcc70)", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>like </h2>
-        <h2 style={{ position: 'absolute', top: '350vh', left: '3vw', fontSize: '2em',  zIndex: '1', background: "linear-gradient(30deg, #c850c0, #ffcc70)", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>this one?</h2>
+        <h2 style={{ position: 'absolute', top: `20vh`, right: '16vw', fontSize: '2em',  zIndex: '5', background: "linear-gradient(30deg, #c850c0, #ffcc70)"}}>Would you like </h2>
+        <h2 style={{ position: 'absolute', top: '180vh', left: '10vw', fontSize: '2em',  zIndex: '1', background: "linear-gradient(30deg, #c850c0, #ffcc70)" }}>a web page</h2>
+        <h2 style={{ position: 'absolute', top: '260vh', right: '10vw',fontSize: '2em',   zIndex: '1', background: "linear-gradient(30deg, #c850c0, #ffcc70)" }}>like </h2>
+        <h2 style={{ position: 'absolute', top: '350vh', left: '3vw', fontSize: '2em',  zIndex: '1', background: "linear-gradient(30deg, #c850c0, #ffcc70)" }}>this one?</h2>
         <div style={{ position: 'absolute', top: '400vh', fontSize: '1em',  zIndex: '1', margin: "10px" }}>
         <ContactForm />
        </div>
