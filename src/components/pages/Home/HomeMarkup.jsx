@@ -18,15 +18,15 @@ import ShoeMarkup from "../Shoe/ShoeMarkup";
       <Breakpoint large up>
         <div>
           <div style={{ position: "absolute",top: "25%", left: "50%", transform: "translate3d(-50%,-50%,0)",}}>
-            <h1 style={{ marginTop: "5px", padding: 0, fontSize: "2.5em", fontWeight: 500, letterSpacing: "-0.05em",}} >
+            <h1 style={{ marginTop: "5px", padding: 0, fontSize: "2.5em", fontWeight: 500, letterSpacing: "-0.05em",background: "linear-gradient(30deg, #c850c0, #ffcc70)", WebkitTextFillColor: "transparent", backgroundClip: "text"}} >
               Hi! I'm Ricardo Glad to see you!
             </h1>
             <br />
             <br />
-            <h1 style={{ margin: "10 px",  padding: 0,  fontSize: "1.4em",  fontWeight: 500, letterSpacing: "-0.05em", lineHeight: "1.9em", }}>
+            <h1 style={{background: "linear-gradient(30deg, #c850c0, #ffcc70)", WebkitTextFillColor: "transparent", backgroundClip: "text", margin: "10 px",  padding: 0,  fontSize: "1.6em",  fontWeight: 500, letterSpacing: "-0.05em", lineHeight: "1.9em", }}>
               I’m a software developer! I can help you build a product, feature
-              or website. Look through some of my work and experience! If you
-              like what you see and have a project you need coded, don’t
+              or website. <br />Look through some of my work and  experience! If you
+              like what you see and <br />have a project you need coded, don’t
               hesitate to contact me.{" "}
             </h1>
           </div>
@@ -87,17 +87,24 @@ import ShoeMarkup from "../Shoe/ShoeMarkup";
 
 export default function HomeMarkup() {
   return (
-    <div >
-      <div className={styles.container}>
-      <Overlay />
-        <Canvas className={styles.canvas} camera={{ position: [0, 0, 1] }}>
-          <Stars />
-        </Canvas>
-      <div style={{ position: "absolute", top: "calc(60vh + 9vh)", width: "100vw", height: "30vh"}}>
-        <ShoeMarkup />
+    <div>
+      <Breakpoint large up>
+      <div >
+        <div className={styles.container}>
+          <div style={{position: "absolute", top: "calc(60vh - 15vw)", width: "100vw", height: "30vh", right:"25vw"}}>
+  
+        <Overlay  />
+          </div>
+          <Canvas className={styles.canvas} camera={{ position: [0, 0, 1] }}>
+            <Stars />
+          </Canvas>
+        <div style={{ position: "absolute", top: "calc(60vh - 25vw)", width: "100vw", height: "30vh", left: "25vw"}}>
+          <ShoeMarkup />
+        </div>
+        </div>
+  
       </div>
-      </div>
-
+      </Breakpoint>
     </div>
   );
 }

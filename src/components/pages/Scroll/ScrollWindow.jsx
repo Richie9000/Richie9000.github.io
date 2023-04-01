@@ -85,8 +85,8 @@ export const ScrollWindow = () => (
         <h2 style={{ position: 'absolute', top: `30vh`, right: '8vw', fontSize: '5em',  zIndex: '5', background: "linear-gradient(30deg, #c850c0, #ffcc70)", WebkitTextFillColor: "transparent", backgroundClip: "text"}}>Would you like </h2>
         <h2 style={{ position: 'absolute', top: '180vh', left: '10vw', fontSize: '5em',  zIndex: '1', background: "linear-gradient(30deg, #c850c0, #ffcc70)", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>a web page</h2>
         <h2 style={{ position: 'absolute', top: '235vh', right: '30vw',fontSize: '5em',   zIndex: '1', background: "linear-gradient(30deg, #c850c0, #ffcc70)", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>like </h2>
-        <h2 style={{ position: 'absolute', top: '320vh', right: '20vw', fontSize: '5em',  zIndex: '1', background: "linear-gradient(30deg, #c850c0, #ffcc70)", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>this one?</h2>
-        <div style={{ position: 'absolute', top: '330vh', left: '50vw', fontSize: '1em',  zIndex: '1', margin: "10px" }}>
+        <h2 style={{ position: 'absolute', top: '330vh', right: '20vw', fontSize: '5em',  zIndex: '1', background: "linear-gradient(30deg, #c850c0, #ffcc70)", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>this one?</h2>
+        <div style={{ position: 'absolute', top: '340vh', left: '60vw', fontSize: '1em',  zIndex: '1', margin: "10px", }}>
         <ContactForm />
        </div>
       </Scroll>
