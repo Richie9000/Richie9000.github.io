@@ -68,13 +68,13 @@ const ShoeMarkup = () => {
     </Breakpoint>
     <Breakpoint small down>
     <div style={{display: "flex", justifyContent: "center", margin: "0 auto", alignItems: "center", textAlign:"center"}} >
-        <h1 style={{margin:"20px", top: "14px", fontSize:"15px"}}>Let your client customize your products!</h1>
+        <h1 style={{margin:"20px", top: "14px", fontSize:"4vw"}}>Let your client customize your products!</h1>
        
     </div>
-    <div style={{marginLeft: "15px", position: "absolute", top: "30%"}}>
-    <div style={{backgroundColor:"#16094e", borderRadius:"13px", padding:"1rem"}}>
+    <div style={{position: "absolute", top: "30%", left: "11vw"}}>
+    <div style={{backgroundColor:"#16094e", borderRadius:"13px", padding:"1rem", width:"70vw"}}>
         <div >
-            <Canvas style={{ width: "85vw", backgroundColor:"white", height:"40vh"}}>
+            <Canvas style={{ width: "70vw", backgroundColor:"white", height:"40vh"}}>
             <Suspense fallback={null}>
             <ambientLight intensity={.7} />
             <spotLight intensity={.7} angle={.1} penumbra={1} position={[10,25,10]} castShadow />
@@ -87,23 +87,23 @@ const ShoeMarkup = () => {
             </Canvas>
 
         </div>
-        <h2>Color chooser</h2>
+        <h3 style={{color:"white"}} >Color chooser</h3>
         <div className='colors'>
              <div>
                 <input className={styles.input} onChange={(e) => setMesh(e.target.value)} type="color" id="mesh" name="mesh"
                        value={mesh} />
-                <label htmlFor="mesh">Main</label>
+                <label style={{color:"white"}} htmlFor="mesh">Main</label>
               </div>
 
             <div>
                 <input className={styles.input}onChange={(e)=> setStripes(e.target.value)} type="color" id="stripes" name="stripes"
                         value={stripes} />
-                <label htmlFor="stripes">Stripes</label>
+                <label style={{color:"white"}} htmlFor="stripes">Stripes</label>
             </div>
              <div>
                 <input className={styles.input} onChange={(e)=>setSole(e.target.value)} type="color" id="sole" name="sole"
                         value={sole} />
-                <label htmlFor="sole">Sole</label>
+                <label style={{color:"white"}} htmlFor="sole">Sole</label>
             </div>
         </div>
     </div>

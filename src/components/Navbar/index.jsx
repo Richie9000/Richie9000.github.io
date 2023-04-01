@@ -28,9 +28,8 @@ const Navbar = () => {
        <div ref={closed} className="containerS" style={{ top: 0, height: "100vh", width: "100%", backgroundColor:"black", zIndex: "3", position: "absolute", opacity:"95%"}}>
          <ul style={{margin: "25px", paddingTop:"20px", display:"grid"}} >
       <Link className="list-group-item" onClick= {() => { setShowNav(false); CloseNav()}} to="/" style={{margin: "15px", backgroundColor: "Transparent", fontSize:"19px", color: "white", opacity: "25%"}}  >Home</Link>
-      <Link className="list-group-item" to="/model"  onClick= {() => {setShowNav(false); CloseNav()}} style={{margin: "15px", backgroundColor: "Transparent", fontSize:"19px", color: "white", opacity: "25%"}} >Shoe Model</Link>
       <Link className="list-group-item" to="/house"  onClick= {() => {setShowNav(false); CloseNav(); }} style={{margin: "15px", backgroundColor: "Transparent", fontSize:"19px", color: "white", opacity: "25%"}} >3D House</Link>
-      <Link className="list-group-item" to="/scroll"  onClick= {() => {setShowNav(false); CloseNav()}} style={{  margin: "15px", backgroundColor: "Transparent", fontSize:"19px", color: "white", opacity: "25%"}} >Scroll</Link>
+      <Link className="list-group-item" to="/scroll"  onClick= {() => {setShowNav(false); CloseNav()}} style={{  margin: "15px", backgroundColor: "Transparent", fontSize:"19px", color: "white", opacity: "25%"}} >Contact</Link>
          </ul>
          <button  className="closebtn" onClick= {() => {setShowNav(false); CloseNav()}} style={{   backgroundColor: "Transparent", backgroundRepeat:"no-repeat",
         border: "none", cursor: "pointer", overflow: "hidden", color: "white", top: 0, position:"absolute", right: 2,
@@ -48,8 +47,6 @@ const Navbar = () => {
     <div className="navbar" style={{   color: colorNav ? "black" : "", zIndex: colorNav ? "5" : ""}}  >
     <ul style={{margin: "15px"}}  >
     <Link className="nav-list" to="/" style={{margin: "15px"}}  >Home</Link>
-
-      <Link className="nav-list" to="/model" style={{margin: "15px"}} >Shoe Model</Link>
       <Link className="nav-list" onClick={()=> handleClick()} to="/house" style={{margin: "15px"}} >3D House</Link>
       <Link className="nav-list" to="/scroll" style={{  margin: "15px"}} >Contact</Link>
       

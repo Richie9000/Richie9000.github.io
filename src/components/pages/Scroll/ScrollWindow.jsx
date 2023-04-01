@@ -41,13 +41,13 @@ function Items() {
   // define different positions for items based on viewport size
   const itemPositions = isSmallViewport
     ? [
-        [-w / 6, -h * 0.5, 0],
-        [w / 30, -h, 0],
-        [-w / 4, -h * 1.5, 0],
-        [w / 4, -h * 1.8, 0],
-        [w / 10, -h * 2.5, 0],
-        [-w / 4, -h * 3.5, 0],
-        [-w / 4, -h * 4.1, 0],
+        [-w / 6, -h * -.4, 0],
+        [w / 30, -h * -.07, 0],
+        [-w / 4, -h * .17, 0],
+        [w / 4, -h * .4, 0],
+        [w / 10, -h * .7, 0],
+        [-w / 4, -h * .99, 0],
+        [-w / 4, -h * 1.2, 0],
         [w / 4, -h * 4.6, 0],
         [-w / 6, -h * 5.6, 0],
       ]
@@ -79,14 +79,14 @@ export const ScrollWindow = () => (
 
   <Canvas style={{height: '100vh', zIndex: '0' }} orthographic camera={{ zoom: 80 }} gl={{ alpha: false, antialias: false, stencil: false, depth: false }} dpr={[1, 1.5]}>
     <color attach="background" args={['#f0f0f0']} />
-    <ScrollControls damping={6} pages={5}>
+    <ScrollControls damping={6} pages={4}>
       <Items />
       <Scroll html style={{ width: '100%',  height: '100vh', zIndex: '0' }}>
         <h2 style={{ position: 'absolute', top: `30vh`, right: '8vw', fontSize: '5em',  zIndex: '5', background: "linear-gradient(30deg, #c850c0, #ffcc70)", WebkitTextFillColor: "transparent", backgroundClip: "text"}}>Would you like </h2>
         <h2 style={{ position: 'absolute', top: '180vh', left: '10vw', fontSize: '5em',  zIndex: '1', background: "linear-gradient(30deg, #c850c0, #ffcc70)", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>a web page</h2>
         <h2 style={{ position: 'absolute', top: '235vh', right: '30vw',fontSize: '5em',   zIndex: '1', background: "linear-gradient(30deg, #c850c0, #ffcc70)", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>like </h2>
-        <h2 style={{ position: 'absolute', top: '350vh', right: '20vw', fontSize: '5em',  zIndex: '1', background: "linear-gradient(30deg, #c850c0, #ffcc70)", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>this one?</h2>
-        <div style={{ position: 'absolute', top: '370vh', left: '50vw', fontSize: '1em',  zIndex: '1', margin: "10px" }}>
+        <h2 style={{ position: 'absolute', top: '320vh', right: '20vw', fontSize: '5em',  zIndex: '1', background: "linear-gradient(30deg, #c850c0, #ffcc70)", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>this one?</h2>
+        <div style={{ position: 'absolute', top: '330vh', left: '50vw', fontSize: '1em',  zIndex: '1', margin: "10px" }}>
         <ContactForm />
        </div>
       </Scroll>
@@ -98,14 +98,14 @@ export const ScrollWindow = () => (
   <Breakpoint small down>
      <Canvas style={{height: '100vh', zIndex: '0' }} orthographic camera={{ zoom: 80 }} gl={{ alpha: false, antialias: false, stencil: false, depth: false }} dpr={[1, 1.5]}>
     <color attach="background" args={['#f0f0f0']} />
-    <ScrollControls damping={6} pages={5}>
+    <ScrollControls damping={6} pages={2.4}>
       <Items />
       <Scroll html style={{ width: '100%',  height: '100vh', zIndex: '0' }}>
-        <h2 style={{ position: 'absolute', top: `20vh`, right: '16vw', fontSize: '2em',  zIndex: '5'}}>Would you like </h2>
-        <h2 style={{ position: 'absolute', top: '180vh', left: '10vw', fontSize: '2em',  zIndex: '1' }}>a web page</h2>
-        <h2 style={{ position: 'absolute', top: '260vh', right: '10vw',fontSize: '2em',   zIndex: '1' }}>like </h2>
-        <h2 style={{ position: 'absolute', top: '350vh', left: '3vw', fontSize: '2em',  zIndex: '1' }}>this one?</h2>
-        <div style={{ position: 'absolute', top: '400vh', fontSize: '1em',  zIndex: '1', margin: "10px" }}>
+        <h2 style={{ position: 'absolute', top: `20vh`, right: '16vw', fontSize: '2.5em',  zIndex: '5'}}>Would you like </h2>
+        <h2 style={{ position: 'absolute', top: '89vh', left: '10vw', fontSize: '2em',  zIndex: '1' }}>a web page</h2>
+        <h2 style={{ position: 'absolute', top: '140vh', right: '10vw',fontSize: '2em',   zIndex: '1' }}>like </h2>
+        <h2 style={{ position: 'absolute', top: '160vh', right: '3vw', fontSize: '2em',  zIndex: '1' }}>this one?</h2>
+        <div style={{ position: 'absolute', top: '180vh', fontSize: '1em',  zIndex: '1', margin: "10px" }}>
         <ContactForm />
        </div>
       </Scroll>
