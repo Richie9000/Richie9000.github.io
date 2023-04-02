@@ -8,10 +8,10 @@ import styles from "./Shoe.module.css"
 
 const ShoeMarkup = () => {
 
-    const [mesh, setMesh] = useState("#ffffff")
-    const [stripes, setStripes] = useState("#ffffff")
-    const [sole, setSole] = useState("#ffffff")
-    const [laces, setLaces] = useState("#ffffff")
+    const [mesh, setMesh] = useState("#EBF7ED")
+    const [stripes, setStripes] = useState("#1CBFB2")
+    const [sole, setSole] = useState("#DBF2F7")
+    const [laces, setLaces] = useState("#FC1E05")
 
   return (
     <div>
@@ -41,23 +41,23 @@ const ShoeMarkup = () => {
           <h1 className={styles.titleC}>Color chooser</h1>
           <div className={styles.colors}>
                <div>
-                  <input onChange={(e) => setMesh(e.target.value)} type="color" id="mesh" name="mesh"
+                  <input style={{pointerEvents:"auto"}} onChange={(e) => setMesh(e.target.value)} type="color" id="mesh" name="mesh"
                          value={mesh} />
                   <label htmlFor="mesh">Main</label>
                 </div>
   
               <div>
-                  <input onChange={(e)=> setStripes(e.target.value)} type="color" id="stripes" name="stripes"
+                  <input style={{pointerEvents:"auto"}} onChange={(e)=> setStripes(e.target.value)} type="color" id="stripes" name="stripes"
                           value={stripes} />
                   <label htmlFor="stripes">Stripes</label>
               </div>
                <div>
-                  <input onChange={(e)=>setSole(e.target.value)} type="color" id="sole" name="sole"
+                  <input style={{pointerEvents:"auto"}} onChange={(e)=>setSole(e.target.value)} type="color" id="sole" name="sole"
                           value={sole} />
                   <label htmlFor="sole">Sole</label>
               </div>
                <div>
-                  <input onChange={(e)=>setLaces(e.target.value)} type="color" id="laces" name="laces"
+                  <input style={{pointerEvents:"auto"}} onChange={(e)=>setLaces(e.target.value)} type="color" id="laces" name="laces"
                           value={laces} />
                   <label htmlFor="sole">Laces</label>
               </div>
