@@ -5,9 +5,11 @@ import Mvdr from "./Mvdr";
 import { Breakpoint} from "react-socks";
 import Ocean from "./Water";
 import styles from "./HouseMarkup.module.css"
+import Stars from "../Home/Stars";
 
 
  const HouseMarkup = () => {
+
 
   return (
     <div>
@@ -65,23 +67,16 @@ import styles from "./HouseMarkup.module.css"
             NFT created for Decentraland Metaverse
           </h1>
         </div>
-        <div style={{ width: "100%" }}>
-          <Canvas style={{ position: "absolute", top: 50, left: 0, width:"100%", height:"90%"}} camera={{ fov: 70, position: [50, 0, -40] }}>
-            <Suspense fallback={null}>
-              <ambientLight intensity={5} />
-              <spotLight
-                position={[70, 41, 60]}
-                intensity={10}
-                angle={0.29}
-                penumbra={1}
-                shadow-mapSize={[512, 512]}
-                castShadow
-              />
-              <Mvdr scale={.5} position={[15, -5, -5]} />
+        <div style={{ width: "100%", height:"100vh" }}>
+        <Canvas style={{position:"absolute", top:"0", height:"110vh"}} camera={{ position: [0, 0, 1] }}>
+          <Suspense fallback={null}>
+          <OrbitControls enablePan={true} enableDamping enableZoom/>
 
-              <OrbitControls />
-            </Suspense>
+            <Stars /> 
+          <Mvdr scale={.017} position={[.1, 0, 0]} />
+          </Suspense> 
           </Canvas>
+         
           <footer
             style={{
               display:"flex",
@@ -96,7 +91,7 @@ import styles from "./HouseMarkup.module.css"
             }}
           >
           
-            <div style={{ alignItems:"center", zIndex:"1"}}>
+            <div style={{ alignItems:"center", zIndex:"1", color:"white"}}>
               If you wanna know
               more about visit....
               <a
