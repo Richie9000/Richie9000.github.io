@@ -76,7 +76,7 @@ export default function HomeMarkup() {
             <div style={{ position: "absolute", top: "33vh", width: "100%" }}>
                   <Overlay />
                  </div>
-        <Canvas style={{position:"absolute", top:"0", height:"100vh"}} camera={{ position: [0, 0, 1] }}>
+        <Canvas style={{position:"absolute", top:"0", height:"130vh"}} camera={{ position: [0, 0, 1] }}>
             <Stars />
           </Canvas>
           <div style={{ position:"absolute", top:"60vh"}}>
