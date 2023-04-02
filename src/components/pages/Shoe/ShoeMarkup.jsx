@@ -67,14 +67,15 @@ const ShoeMarkup = () => {
    
     </Breakpoint>
     <Breakpoint small down>
-    <div style={{display: "flex", justifyContent: "center", margin: "0 auto", alignItems: "center", textAlign:"center"}} >
-        <h1 style={{margin:"20px", top: "14px", fontSize:"4vw"}}>Let your client customize your products!</h1>
+        
+    <div >
+        <h1 style={{position:"aboslute", left:"10vw" , fontSize:"4vw"}}>Let your client customize your products!</h1>
        
     </div>
-    <div style={{position: "absolute", top: "30%", left: "11vw"}}>
-    <div style={{backgroundColor:"#16094e", borderRadius:"13px", padding:"1rem", width:"70vw"}}>
+    <div style={{position: "absolute", top: "5vh", left: "11vw"}}>
+    <div style={{backgroundColor:"#16094e", borderRadius:"13px", padding:"1rem", width:"70vw", height:"9vh"}}>
         <div >
-            <Canvas style={{ width: "70vw", backgroundColor:"white", height:"40vh"}}>
+            <Canvas style={{ width: "70vw", backgroundColor:"white", height:"30vh"}}>
             <Suspense fallback={null}>
             <ambientLight intensity={.7} />
             <spotLight intensity={.7} angle={.1} penumbra={1} position={[10,25,10]} castShadow />
