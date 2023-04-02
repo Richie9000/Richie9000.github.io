@@ -10,7 +10,7 @@ const ShoeMarkup = () => {
 
     const [mesh, setMesh] = useState("#EBF7ED")
     const [stripes, setStripes] = useState("#1CBFB2")
-    const [sole, setSole] = useState("#DBF2F7")
+    const [sole, setSole] = useState("#123456")
     const [laces, setLaces] = useState("#FC1E05")
 
   return (

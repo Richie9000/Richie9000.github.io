@@ -1,7 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import React from "react";
 import Stars from "./Stars";
-import Stars2 from "./Stars";
+
 
 import styles from "./HomeMarkup.module.css";
 import { Breakpoint } from "react-socks";
@@ -68,23 +68,24 @@ export default function HomeMarkup() {
   
       </div>
       </Breakpoint>
-      <Breakpoint small down>
-          <div>
-            <div >
-              <div >
-                <div style={{ position: "absolute", top: "33vh", width: "100%" }}>
+
+
+
+      <div style={{height:"100%"}} >
+        <Breakpoint small down>
+            <div style={{ position: "absolute", top: "33vh", width: "100%" }}>
                   <Overlay />
                  </div>
-              </div>
-              <Canvas >
-            
-              </Canvas>
-              <div style={{ position:"absolute", top:"60vh"}}>
+        <Canvas style={{position:"absolute", top:"0", height:"100vh"}} camera={{ position: [0, 0, 1] }}>
+            <Stars />
+          </Canvas>
+          <div style={{ position:"absolute", top:"60vh"}}>
                 <ShoeMarkup />
               </div>
-            </div>
-          </div>
+  
       </Breakpoint>
+
+      </div>
     </div>
   );
 }
